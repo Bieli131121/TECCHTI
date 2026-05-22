@@ -3,7 +3,7 @@ import emailjs from '@emailjs/browser'
 import './App.css'
 
 const LOGO = '/logo.png'
-const WA_LINK = 'https://wa.me/5548991921089'
+const WA_LINK = 'https://wa.me/5548920047334'
 
 const serviceCategories = [
   {
@@ -440,7 +440,7 @@ export default function App() {
           <div className="contact-grid">
             <div className="contact-details">
               <div className="contact-detail"><div className="contact-icon">✉️</div><div><div className="cd-label">E-mail</div><a href="mailto:TecchTI@gmail.com" className="contact-link">TecchTI@gmail.com</a></div></div>
-              <div className="contact-detail"><div className="contact-icon">📞</div><div><div className="cd-label">WhatsApp</div><a href={WA_LINK} target="_blank" rel="noopener noreferrer" className="contact-link">(48) 99192-1089</a></div></div>
+              <div className="contact-detail"><div className="contact-icon">📞</div><div><div className="cd-label">WhatsApp</div><a href={WA_LINK} target="_blank" rel="noopener noreferrer" className="contact-link">(48) 9 2004-7334</a></div></div>
               <div className="contact-detail"><div className="contact-icon">📍</div><div><div className="cd-label">Localização</div><span>Santa Catarina, Brasil</span></div></div>
               <div className="contact-detail"><div className="contact-icon">🕐</div><div><div className="cd-label">Atendimento</div><span>Seg–Sex: 8h às 18h | Sáb: 8h às 12h</span></div></div>
               <div className="contact-detail"><div className="contact-icon">🏢</div><div><div className="cd-label">CNPJ</div><span>66.165.195/0001-38</span></div></div>
