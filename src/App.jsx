@@ -195,10 +195,10 @@ export default function App() {
     setError(false)
     try {
       await emailjs.sendForm(
-        'YOUR_SERVICE_ID',
-        'YOUR_TEMPLATE_ID',
+        'service_ahuygnl',
+        'template_wuygy44',
         formRef.current,
-        'YOUR_PUBLIC_KEY'
+        'dWOv5ClMxvzTLoS0N'
       )
       setSent(true)
       formRef.current.reset()
