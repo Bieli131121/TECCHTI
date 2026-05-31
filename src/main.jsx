@@ -1,6 +1,6 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom'
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 import './index.css'
 import App from './App.jsx'
 import Contato from './Contato.jsx'
@@ -14,6 +14,8 @@ function TrackedRoutes() {
       <Route path="/" element={<App />} />
       <Route path="/contato" element={<Contato />} />
       <Route path="/admin" element={<AdminPanel />} />
+      {/* Rota 404 - redireciona qualquer caminho desconhecido para a home */}
+      <Route path="*" element={<Navigate to="/" replace />} />
     </Routes>
   )
 }

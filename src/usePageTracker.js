@@ -7,6 +7,9 @@ export function usePageTracker() {
   const location = useLocation()
 
   useEffect(() => {
+    // Não rastreia a rota /admin para não poluir as estatísticas
+    if (location.pathname === '/admin') return
+
     try {
       const raw = localStorage.getItem(STORAGE_KEY)
       const data = raw ? JSON.parse(raw) : {
@@ -15,7 +18,8 @@ export function usePageTracker() {
         pages: {},
         days: {},
         lastVisit: null,
-        sessions: []
+        sessions: [],
+        devices: { Desktop: 0, Mobile: 0, Tablet: 0 }
       }
 
       const today = new Date().toISOString().split('T')[0]
