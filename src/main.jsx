@@ -14,7 +14,6 @@ function TrackedRoutes() {
       <Route path="/" element={<App />} />
       <Route path="/contato" element={<Contato />} />
       <Route path="/admin" element={<AdminPanel />} />
-      {/* Rota 404 - redireciona qualquer caminho desconhecido para a home */}
       <Route path="*" element={<Navigate to="/" replace />} />
     </Routes>
   )
